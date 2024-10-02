@@ -1,0 +1,68 @@
+.ParentContainer{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* grid-gap: 15px; */
+}
+
+.InProgress{
+    /* width: 250px; */
+    margin: 15px;  
+}
+.Todo{
+    /* width: 250px; */
+    margin: 15px;  
+}
+.Done{
+    /* width: 250px; */
+    margin: 15px;  
+}
+.Cancelled{
+    /* width: 250px; */
+    margin: 15px;  
+}
+.Backlog{
+    /* width: 250px; */
+    margin: 15px;  
+}
+
+.heading{
+    margin: 15px;
+    /* margin-top: 15px; */
+    margin-bottom: 10px;
+    margin-left: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.name{
+    margin-left: 20px;
+}
+
+.functionality{
+    display: flex;
+    justify-content: space-around;
+}
+
+.information{
+    display: flex;
+    justify-content: space-between;
+}
+
+.count{
+    margin-left: 8px;
+}
+
+.Add{
+    margin-right:10px;
+}
+
+.statuslogo{
+    /* margin: 15px; */
+    margin-left: 15px;
+    margin-right: -8px;
+}
+
+.statusname{
+    display: flex;
+    margin: 0px;
+}

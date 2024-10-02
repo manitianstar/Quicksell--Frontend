@@ -1,0 +1,29 @@
+#dropdown {
+    cursor: pointer; 
+    appearance: none; 
+    height: 100%;
+    width: 70px;
+    padding-left: 15px;
+    border: none;
+  }
+  
+  .parent{
+    background-color: #fff; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    display: flex;
+    justify-content: space-around;
+    width: 120px;
+    margin-top: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+  }
+  
+  .logo{
+    margin: 10px;
+  }
+
+  
+  
+  
