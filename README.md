@@ -1,10 +1,10 @@
-**Kanban Board Project**
+# **Kanban Board Project** #
 
-**Overview**
+## **Overview** ##
 
 This project is a Kanban board built using ReactJS, designed to help users manage tasks efficiently. The board allows for organizing tickets by three main functionalities: **Status**, **User Name**, and **Priority**. Additionally, the application will implement sorting capabilities for tickets based on **User Name** or **Priority**.
 
-**Features**
+## **Features** ##
 
 - **Grouping Tickets**: Users can group tickets based on:
   - **Status**: Display tickets based on their current status (e.g., To Do, In Progress, Done).
@@ -14,14 +14,12 @@ This project is a Kanban board built using ReactJS, designed to help users manag
   - Tickets can be sorted by **User Name** or **Priority**.
   - Sorting functionality will be integrated into the existing grouping logic.
 
-**Technical Details**
-
-**Technologies Used**
+## **Technologies Used** ##
 
 - **ReactJS**: For building the user interface.
 - **Context API**: To manage application state and facilitate communication between components without prop drilling.
 
-**Implementation Details**
+## **Implementation Details** ##
 
 1. **Grouping Logic**:
    1. Tickets are grouped based on the selected groupBy option in the Context API.
