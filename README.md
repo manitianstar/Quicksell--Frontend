@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+**Kanban Board Project**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Overview**
 
-## Available Scripts
+This project is a Kanban board built using ReactJS, designed to help users manage tasks efficiently. The board allows for organizing tickets by three main functionalities: **Status**, **User Name**, and **Priority**. Additionally, the application will implement sorting capabilities for tickets based on **User Name** or **Priority**.
 
-In the project directory, you can run:
+**Features**
 
-### `npm start`
+- **Grouping Tickets**: Users can group tickets based on:
+  - **Status**: Display tickets based on their current status (e.g., To Do, In Progress, Done).
+  - **User Name**: Group tickets assigned to each user.
+  - **Priority**: Organize tickets by their assigned priority levels (e.g., High, Medium, Low).
+- **Sorting Tickets**:
+  - Tickets can be sorted by **User Name** or **Priority**.
+  - Sorting functionality will be integrated into the existing grouping logic.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Technical Details**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Technologies Used**
 
-### `npm test`
+- **ReactJS**: For building the user interface.
+- **Context API**: To manage application state and facilitate communication between components without prop drilling.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Implementation Details**
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. **Grouping Logic**:
+   1. Tickets are grouped based on the selected groupBy option in the Context API.
+   1. The current grouping state is tracked by a constant named groupBy.
+1. **Sorting Logic** (to be implemented):
+   1. A new constant named priority will be added to the Context API to track the sorting parameter (either by name or by priority).
+   1. The ticket array used in the grouping functionality will be sorted based on the chosen parameter before being displayed.
